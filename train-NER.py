@@ -81,13 +81,6 @@ with nlp.disable_pipes(*unaffected_pipes):
                 )
         print("Losses", losses)
 
-#----------- After training the model is checked but is still not saved------------
-# Testing the model
-#doc = nlp("Upcoming Tuesday we are going to play game. This Wednesday we will go to church. Next Monday we will have party. Last Thursday we had beautiful time.")
-#print("Entities", [(ent.text, ent.label_) for ent in doc.ents])
-
-#------------------------------------------------------------------------------
-
 
 # Save the  model to directory
 output_dir = Path('ner-date')

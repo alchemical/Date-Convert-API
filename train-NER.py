@@ -63,8 +63,8 @@ from pathlib import Path
 # TRAINING THE MODEL
 with nlp.disable_pipes(*unaffected_pipes):
 
-  # Training for 30 iterations
-  for iteration in range(500):
+  # Training for 300 iterations
+  for iteration in range(300):
 
     # shuufling examples  before every iteration
     random.shuffle(TRAIN_DATA)
